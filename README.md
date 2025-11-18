@@ -3,8 +3,8 @@
 
 Customer Churn refers to identifying customers who are likely to stop using a company’s service in the near future.
 
-Dataset used: **Customer Churn Dataset by Muhammad Shahid Azeem (Kaggle)**  
-Link: https://www.kaggle.com/datasets/muhammadshahidazeem/customer-churn-dataset
+Dataset used: **Customer Churn Dataset(Kaggle)**  
+Link: [https://www.kaggle.com/datasets/muhammadshahidazeem/customer-churn-dataset](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
 
 The project includes dataset exploration, preprocessing, feature engineering, model development, handling class imbalance, evaluation, and deployment design.
 ---
