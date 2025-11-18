@@ -190,11 +190,11 @@ Final model exported as `model.pkl` using:
 - AUC > 0.80 is considered strong.  
 
 ---
-🚀 Deployment (Streamlit Web Application)
+## 🚀 Deployment (Streamlit Web Application)
 
 This project includes a simple and interactive Streamlit-based web application that allows real-time customer churn prediction using the trained XGBoost model. The deployment makes the model accessible to non-technical users through an easy-to-use interface.
 
-📌 Overview
+📌 **Overview**
 
 The goal of this deployment is to provide a user-friendly web interface where users can input customer details and instantly receive:
 
@@ -206,8 +206,8 @@ xgboost_churn_model.pkl → Saved trained model
 scaler.pkl → Saved MinMaxScaler used during training
 Both are necessary to ensure consistent and accurate predictions.
 
-🧠 How the Deployment Works
-1. Load Saved Model and Scaler
+🧠 **How the Deployment Works**
+ 1. Load Saved Model and Scaler
 The app loads the trained XGBoost model and the scaler:
 
 model = joblib.load("xgboost_churn_model.pkl")
@@ -216,7 +216,7 @@ scaler = joblib.load("scaler.pkl")
 The model predicts churn.
 The scaler ensures the new input data matches the scale of the training data.
 
-2. Build the User Interface (Streamlit)
+ 2. Build the User Interface (Streamlit)
 
 Streamlit automatically generates a clean UI.
 Users input customer details such as:
@@ -229,19 +229,19 @@ Internet service
 
 These inputs are collected using Streamlit widgets like number_input and selectbox.
 
-3. Convert Inputs into Model Format
+ 3. Convert Inputs into Model Format
 
 User inputs are converted to the exact feature format expected by the ML model, including one-hot encoded fields:
 
 df = pd.DataFrame([data])
 
-4. Scale Numerical Inputs
+ 4. Scale Numerical Inputs
 
 Before feeding to the model, inputs are scaled using the previously saved scaler:
 
 df_scaled = scaler.transform(df)
 
-5. Predict Churn
+ 5. Predict Churn
 
 The model predicts:
 
@@ -250,7 +250,7 @@ Probability (0.0 – 1.0)
 pred = model.predict(df_scaled)[0]
 prob = model.predict_proba(df_scaled)[0][1]
 
-6. Display Results
+ 6. Display Results
 
 The app clearly displays the final output:
 
