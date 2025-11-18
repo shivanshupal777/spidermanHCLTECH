@@ -62,103 +62,133 @@ Strong correlation between contract type, tenure, monthly charges, and churn.
 
 The project follows a complete machine learning pipeline.
 
-  Step 1: Data Loading
-   ‣ Import the dataset and perform initial checks such as shape, column types, duplicates, and missing values.
+---
 
-  Step 2: Data Cleaning
-  ‣ Convert blank entries in numerical columns (e.g., TotalCharges) to appropriate numeric values.
-  ‣ Handle missing values.
-  ‣ Convert Yes/No categorical variables to binary form.
-  ‣ Strip unnecessary whitespace.
+### Step 1: Data Loading
 
-  Step 3: Exploratory Data Analysis (EDA)
-  ‣ Churn distribution
-  ‣ Tenure vs churn
-  ‣ MonthlyCharges vs churn
-  ‣ Contract type impact on churn
-  ‣ Correlation heatmaps
-  ‣ Customer behavior patterns
-  ‣ Key observations typically include:
-  ‣ Month-to-month contract customers churn the most
-  ‣ Customers with high monthly charges have higher churn
-  ‣ Long-tenure customers are more stable
-  ‣ Lack of technical support and security services increases churn probability
+- Import the dataset.
+- Perform initial checks:
+  - Shape of the dataset.
+  - Column data types.
+  - Duplicate records.
+  - Missing values.
 
-  Step 4: Encoding and Preprocessing
-  ‣ One-hot encode multi-class categorical features
-  ‣ Label encode binary features
-  ‣ Standardize or normalize numerical columns
-  ‣ Split dataset into training and testing sets
- 
-Step 5: Handling Imbalance
+---
 
-Since churn data is imbalanced:
+### Step 2: Data Cleaning
 
-Techniques used:
+- Convert blank entries in numerical columns (e.g., `TotalCharges`) to appropriate numeric values.
+- Handle missing values.
+- Convert `Yes/No` categorical variables to binary form (e.g., `Yes = 1`, `No = 0`).
+- Strip unnecessary whitespace from string columns.
 
-SMOTE (Synthetic Minority Oversampling Technique)
+---
 
-Random oversampling
+### Step 3: Exploratory Data Analysis (EDA)
 
-Class weight adjustments
+- Analyze:
+  - Churn distribution.
+  - Tenure vs. churn.
+  - MonthlyCharges vs. churn.
+  - Contract type impact on churn.
+  - Correlation heatmaps.
+  - Customer behavior patterns.
 
-Evaluation based on recall and precision instead of accuracy
+- Key observations typically include:
+  - Month-to-month contract customers churn the most.
+  - Customers with high monthly charges have higher churn.
+  - Long-tenure customers are more stable.
+  - Lack of technical support and security services increases churn probability.
 
-Step 6: Feature Engineering
+---
 
-Examples:
+### Step 4: Encoding and Preprocessing
 
-Tenure grouping (0–12, 12–24, etc.)
+- One-hot encode multi-class categorical features.
+- Label encode binary features.
+- Standardize or normalize numerical columns.
+- Split dataset into training and testing sets.
 
-Charges ratio: TotalCharges / Tenure
+---
 
-Binary mapping for service features
+### Step 5: Handling Imbalance
 
-Interaction variables for contract + payment method
+Since churn data is imbalanced, the following techniques are used:
 
-Step 7: Model Development
+- **SMOTE** (Synthetic Minority Oversampling Technique).
+- **Random oversampling**.
+- **Class weight adjustments** in models.
+- Evaluation focuses more on:
+  - **Recall** and **Precision** instead of just **Accuracy**.
 
-Multiple models can be trained and compared, including:
+---
 
-Logistic Regression
-Random Forest Classifier
-SVM
+### Step 6: Feature Engineering
 
-Given the nature of churn data, tree-based models (Random Forest, XGBoost) generally perform better.
+Examples of engineered features:
 
-Step 8: Model Evaluation
+- **Tenure grouping** (e.g., `0–12`, `12–24`, etc.).
+- **Charges ratio**: `TotalCharges / Tenure`.
+- **Binary mapping** for service-related features.
+- **Interaction variables** for combinations like `contract type + payment method`.
+
+---
+
+### Step 7: Model Development
+
+Multiple models are trained and compared, including:
+
+- Logistic Regression  
+- Random Forest Classifier  
+- Support Vector Machine (SVM)  
+
+> Given the nature of churn data, tree-based models such as **Random Forest** and **XGBoost** generally perform better.
+
+---
+
+### Step 8: Model Evaluation
 
 Metrics used:
 
-Accuracy
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- ROC-AUC score
+- Confusion Matrix
 
-Precision
+> In churn prediction, **high recall for the churn class** is essential because missing a churn customer (false negative) is more costly for the business.
 
-Recall
+---
 
-F1-score
+### Step 9: Model Saving
 
-ROC-AUC score
+- The final model is exported as `model.pkl` using:
+  - `pickle` or
+  - `joblib`  
+for later use in deployment.
 
-Confusion Matrix
+---
 
-Reason: In churn prediction, high recall for the churn class is essential because missing a churn customer (false negative) is more costly for the business.
-
-Step 9: Model Saving
-
-The final model is exported as model.pkl using pickle or joblib for deployment.
-
-Step 10: Deployment Design
+### Step 10: Deployment Design
 
 Possible deployment approaches:
 
-Flask or FastAPI backend for real-time predictions
+- **Backend APIs**
+  - Flask
+  - FastAPI  
+  For real-time predictions.
 
-Streamlit application for interactive dashboards
+- **Dashboard / UI**
+  - Streamlit application for interactive dashboards.
 
-Containerization using Docker
+- **Containerization**
+  - Using Docker.
 
-Cloud deployment (AWS EC2, Azure App Service, or GCP)
+- **Cloud Deployment**
+  - AWS EC2
+  - Azure App Service
+  - Google Cloud Platform (GCP)
 
 4. Confusion Matrix Interpretation
 
