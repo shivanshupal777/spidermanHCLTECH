@@ -216,12 +216,3 @@ Final model exported as `model.pkl` using:
 - Real-time monitoring of churn probabilities  
 
 ---
-
-If you want, I can also add:
-
-✅ Badges  
-✅ Project structure  
-✅ Requirements.txt  
-✅ How to run the project section  
-
-Just tell me!
