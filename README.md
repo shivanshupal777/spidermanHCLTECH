@@ -31,7 +31,7 @@ The dataset contains:
 - Churn outcome (Yes/No)
 
 **File Included:**  
-- `Customer-Churn-Records.csv`
+- `Telco-Customer-Churn.csv`
 
 ### **2.1 Dataset Features**
 
@@ -189,8 +189,6 @@ Final model exported as `model.pkl` using:
 - Docker  
 
 **Cloud Deployment**
-- AWS EC2  
-- Azure App Service  
 - Google Cloud Platform (GCP)  
 
 ---
