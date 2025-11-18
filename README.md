@@ -143,13 +143,7 @@ Step 7: Model Development
 Multiple models can be trained and compared, including:
 
 Logistic Regression
-
 Random Forest Classifier
-
-XGBoost Classifier
-
-Gradient Boosting
-
 SVM
 
 Given the nature of churn data, tree-based models (Random Forest, XGBoost) generally perform better.
@@ -208,46 +202,8 @@ The ROC curve evaluates the classifier's ability to distinguish churn vs non-chu
 A high AUC score indicates strong discriminatory power.
 Customer churn models typically aim for AUC > 0.80.
 
-6. Pseudocode for the Entire Pipeline
-Load dataset
-Handle missing and incorrect values
-Encode categorical variables
-Normalize numerical features
-Split into train and test sets
-Apply SMOTE to balance classes
-Train multiple ML models
-Evaluate each model using AUC, Precision, Recall, F1
-Select the best-performing model
-Plot confusion matrix and ROC curve
-Save final model using pickle
-Deploy using Flask/Streamlit if required
 
-7. Project Structure
-Customer-Churn-Prediction
-│
-├── data/
-│   └── Customer-Churn-Records.csv
-│
-├── notebooks/
-│   └── Churn_Model_Development.ipynb
-│
-├── src/
-│   ├── preprocessing.py
-│   ├── feature_engineering.py
-│   ├── model_training.py
-│   ├── evaluate.py
-│   └── utils.py
-│
-├── models/
-│   └── model.pkl
-│
-├── app/
-│   └── app.py
-│
-├── README.md
-└── requirements.txt
-
-8. Future Enhancements
+6. Future Enhancements
 
 Automated hyperparameter tuning (GridSearchCV, Optuna)
 
@@ -259,7 +215,7 @@ Integration with CRM systems
 
 Real-time monitoring of churn probabilities
 
-9. Conclusion
+7. Conclusion
 
 This project provides a comprehensive, production-ready approach to customer churn prediction using the Kaggle dataset by Muhammad Shahid Azeem.
 The methodology ensures robust preprocessing, appropriate handling of class imbalance, reliable model evaluation, and clear deployment strategies.
