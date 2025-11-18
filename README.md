@@ -142,9 +142,8 @@ Examples:
 ### **Step 7: Model Development**
 Models trained:
 
-- Logistic Regression  
+- XGBOOST 
 - Random Forest Classifier  
-- Support Vector Machine (SVM)  
 
 💡 **Tree-based models (Random Forest, XGBoost) usually perform best.**
 
