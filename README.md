@@ -7,7 +7,12 @@ Dataset used: **Customer Churn Dataset by Muhammad Shahid Azeem (Kaggle)**
 Link: https://www.kaggle.com/datasets/muhammadshahidazeem/customer-churn-dataset
 
 The project includes dataset exploration, preprocessing, feature engineering, model development, handling class imbalance, evaluation, and deployment design.
+---
 
+## 📝 Problem Statement 
+The goal is to build a Machine Learning Prediction model to predict the Customer Churn, technique to handle imbalance Dataset, Evaluation Metrices to be  utilized & Confusion Matrix/ ROC Curve Explaination.
+
+---
 ---
 
 ## 📌 Introduction  
