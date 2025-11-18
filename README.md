@@ -72,7 +72,7 @@ The dataset contains:
 
 ---
 
-## 🚀 Project Workflow  
+## 🚀 Project/Design Workflow  
 
 ### **Step 1: Data Loading**
 - Import dataset  
