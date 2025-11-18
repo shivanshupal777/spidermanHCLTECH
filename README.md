@@ -121,7 +121,7 @@ Analyze:
 ### **Step 5: Handling Imbalance**
 Techniques applied:
 
-- **SMOTE (Synthetic Minority Oversampling Technique)**  
+- **ADASYN "Adaptive Synthetic Sampling"**  
 - **Random Oversampling**  
 - **Class Weight adjustments**
 
