@@ -198,6 +198,7 @@ Final model exported as `model.pkl` using:
 
            0       0.85      0.86      0.85      1035
            1       0.60      0.57      0.58       374
+
     accuracy                           0.78      1409
    macro avg       0.72      0.72      0.72      1409                                                                                                                
 weighted avg       0.78      0.78      0.78      1409
