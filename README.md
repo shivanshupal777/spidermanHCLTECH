@@ -63,48 +63,33 @@ Strong correlation between contract type, tenure, monthly charges, and churn.
 The project follows a complete machine learning pipeline.
 
   Step 1: Data Loading
-  Import the dataset and perform initial checks such as shape, column types, duplicates, and missing values.
+   ‣ Import the dataset and perform initial checks such as shape, column types, duplicates, and missing values.
 
   Step 2: Data Cleaning
-  Convert blank entries in numerical columns (e.g., TotalCharges) to appropriate numeric values.
-  Handle missing values.
-  Convert Yes/No categorical variables to binary form.
-  Strip unnecessary whitespace.
+  ‣ Convert blank entries in numerical columns (e.g., TotalCharges) to appropriate numeric values.
+  ‣ Handle missing values.
+  ‣ Convert Yes/No categorical variables to binary form.
+  ‣ Strip unnecessary whitespace.
 
-Step 3: Exploratory Data Analysis (EDA)
+  Step 3: Exploratory Data Analysis (EDA)
+  ‣ Churn distribution
+  ‣ Tenure vs churn
+  ‣ MonthlyCharges vs churn
+  ‣ Contract type impact on churn
+  ‣ Correlation heatmaps
+  ‣ Customer behavior patterns
+  ‣ Key observations typically include:
+  ‣ Month-to-month contract customers churn the most
+  ‣ Customers with high monthly charges have higher churn
+  ‣ Long-tenure customers are more stable
+  ‣ Lack of technical support and security services increases churn probability
 
-Churn distribution
-
-Tenure vs churn
-
-MonthlyCharges vs churn
-
-Contract type impact on churn
-
-Correlation heatmaps
-
-Customer behavior patterns
-
-Key observations typically include:
-
-Month-to-month contract customers churn the most
-
-Customers with high monthly charges have higher churn
-
-Long-tenure customers are more stable
-
-Lack of technical support and security services increases churn probability
-
-Step 4: Encoding and Preprocessing
-
-One-hot encode multi-class categorical features
-
-Label encode binary features
-
-Standardize or normalize numerical columns
-
-Split dataset into training and testing sets
-
+  Step 4: Encoding and Preprocessing
+  ‣ One-hot encode multi-class categorical features
+  ‣ Label encode binary features
+  ‣ Standardize or normalize numerical columns
+  ‣ Split dataset into training and testing sets
+ 
 Step 5: Handling Imbalance
 
 Since churn data is imbalanced:
