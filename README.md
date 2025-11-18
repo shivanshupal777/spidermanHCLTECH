@@ -54,30 +54,22 @@ Typical columns in the dataset include:
 2.2 Dataset Characteristics
 
 Mixed feature types (numerical, categorical, binary).
-
 Contains missing or blank values (particularly in TotalCharges).
-
 Highly imbalanced target variable (more "No" churn cases).
-
 Strong correlation between contract type, tenure, monthly charges, and churn.
 
 3. Project Workflow
 
 The project follows a complete machine learning pipeline.
 
-Step 1: Data Loading
+  Step 1: Data Loading
+  Import the dataset and perform initial checks such as shape, column types, duplicates, and missing values.
 
-Import the dataset and perform initial checks such as shape, column types, duplicates, and missing values.
-
-Step 2: Data Cleaning
-
-Convert blank entries in numerical columns (e.g., TotalCharges) to appropriate numeric values.
-
-Handle missing values.
-
-Convert Yes/No categorical variables to binary form.
-
-Strip unnecessary whitespace.
+  Step 2: Data Cleaning
+  Convert blank entries in numerical columns (e.g., TotalCharges) to appropriate numeric values.
+  Handle missing values.
+  Convert Yes/No categorical variables to binary form.
+  Strip unnecessary whitespace.
 
 Step 3: Exploratory Data Analysis (EDA)
 
