@@ -180,7 +180,6 @@ Final model exported as `model.pkl` using:
 
 **Backend APIs**
 - Flask  
-- FastAPI  
 
 **Dashboard / UI**
 - Streamlit  
