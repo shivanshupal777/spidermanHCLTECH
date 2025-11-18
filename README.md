@@ -1,9 +1,9 @@
-# spidermanHCLTECH
+# TEAM SPIDERMAN HCLTECH
 
-Customer Churn Prediction
-Machine Learning Project Documentation
+<h1>Customer Churn Prediction</h1>
+Customer Churn is the process of identifying which customers are likely to stop using a company’s product or service in the near future.
 
-This repository presents a complete end-to-end workflow for predicting customer churn using the publicly available Kaggle dataset:
+Dataset for Customer Churn Prediction taken from Kaggle dataset:
 Customer Churn Dataset by Muhammad Shahid Azeem
 Link: https://www.kaggle.com/datasets/muhammadshahidazeem/customer-churn-dataset
 
@@ -19,8 +19,8 @@ This project builds a supervised machine learning classification model to determ
 
 The dataset contains customer demographic information, account details, service usage patterns, and churn outcome.
 
-Source: Kaggle (Author: Muhammad Shahid Azeem)
-Files Included: Customer-Churn-Records.csv
+
+Files Included: Customer-Churn-Records.csv - Kaggle
 
 2.1 Features (as per dataset)
 
@@ -216,8 +216,3 @@ Integration with CRM systems
 
 Real-time monitoring of churn probabilities
 
-7. Conclusion
-
-This project provides a comprehensive, production-ready approach to customer churn prediction using the Kaggle dataset by Muhammad Shahid Azeem.
-The methodology ensures robust preprocessing, appropriate handling of class imbalance, reliable model evaluation, and clear deployment strategies.
-The model can help organizations better understand customer behavior and design effective retention strategies.
