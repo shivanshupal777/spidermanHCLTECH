@@ -26,29 +26,30 @@ Files Included: Customer-Churn-Records.csv
 
 Typical columns in the dataset include:
 
-Column	Description
-CustomerID	Unique identifier
-Gender	Male/Female
-Age	Customer age
-SeniorCitizen	Indicates senior citizen status
-Partner	Yes/No
-Dependents	Yes/No
-Tenure	Number of months the customer has stayed
-PhoneService	Yes/No
-MultipleLines	Type of phone line service
-InternetService	DSL/Fiber Optic/No
-OnlineSecurity	Customer subscribed or not
-OnlineBackup	Yes/No
-DeviceProtection	Yes/No
-TechSupport	Yes/No
-StreamingTV	Yes/No
-StreamingMovies	Yes/No
-Contract	Month-to-month, One year, Two year
-PaperlessBilling	Yes/No
-PaymentMethod	Type of payment method
-MonthlyCharges	Monthly bill
-TotalCharges	Lifetime charges
-Churn	Target variable (Yes/No)
+| Column           | Description                              |
+| ---------------- | ---------------------------------------- |
+| CustomerID       | Unique identifier                        |
+| Gender           | Male/Female                              |
+| Age              | Customer age                             |
+| SeniorCitizen    | Indicates senior citizen status          |
+| Partner          | Yes/No                                   |
+| Dependents       | Yes/No                                   |
+| Tenure           | Number of months the customer has stayed |
+| PhoneService     | Yes/No                                   |
+| MultipleLines    | Type of phone line service               |
+| InternetService  | DSL/Fiber Optic/No                       |
+| OnlineSecurity   | Customer subscribed or not               |
+| OnlineBackup     | Yes/No                                   |
+| DeviceProtection | Yes/No                                   |
+| TechSupport      | Yes/No                                   |
+| StreamingTV      | Yes/No                                   |
+| StreamingMovies  | Yes/No                                   |
+| Contract         | Month-to-month, One year, Two year       |
+| PaperlessBilling | Yes/No                                   |
+| PaymentMethod    | Type of payment method                   |
+| MonthlyCharges   | Monthly bill                             |
+| TotalCharges     | Lifetime charges                         |
+| Churn            | Target variable (Yes/No)                 |
 
 2.2 Dataset Characteristics
 
