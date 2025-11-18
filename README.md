@@ -192,8 +192,7 @@ Final model exported as `model.pkl` using:
 ---
 ## Result (On telco-customer-churn Dataset) Model:
 
-## CLASSIFICATION REPORT
-
+ CLASSIFICATION REPORT
                 precision   recall   f1-score   support
 
            0       0.85      0.86      0.85      1035
@@ -204,10 +203,10 @@ weighted avg       0.78      0.78      0.78      1409
 
 
 
- ## ROC-AUC SCORE 
-0.8274044795783926
+ h4>ROC-AUC SCORE</h4> 
+  0.8274044795783926
 
-## CONFUSION MATRIX 
+<h4>CONFUSION MATRIX</h4>  
     [[893 142]
      [161 213]]
 
