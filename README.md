@@ -4,7 +4,7 @@
 Customer Churn refers to identifying customers who are likely to stop using a company’s service in the near future.
 
 Dataset used: **Customer Churn Dataset(Kaggle)**  
-Link: [https://www.kaggle.com/datasets/muhammadshahidazeem/customer-churn-dataset](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
+Link: [(https://www.kaggle.com/datasets/blastchar/telco-customer-churn)](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
 
 The project includes dataset exploration, preprocessing, feature engineering, model development, handling class imbalance, evaluation, and deployment design.
 ---
@@ -190,6 +190,27 @@ Final model exported as `model.pkl` using:
 - AUC > 0.80 is considered strong.  
 
 ---
+## Result (On telco-customer-churn Dataset) Model:
+================= CLASSIFICATION REPORT =================
+                precision   recall   f1-score   support
+
+           0       0.85      0.86      0.85      1035
+           1       0.60      0.57      0.58       374
+
+    accuracy                           0.78      1409
+   macro avg       0.72      0.72      0.72      1409
+weighted avg       0.78      0.78      0.78      1409
+
+
+================= ROC-AUC SCORE =================
+0.8274044795783926
+
+================= CONFUSION MATRIX =================
+[[893 142]
+[161 213]]
+
+Model and Scaler Saved Successfully!
+
 ## 🚀 Deployment (Streamlit Web Application)
 
 This project includes a simple and interactive Streamlit-based web application that allows real-time customer churn prediction using the trained XGBoost model. The deployment makes the model accessible to non-technical users through an easy-to-use interface.
