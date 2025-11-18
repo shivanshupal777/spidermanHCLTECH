@@ -208,8 +208,8 @@ weighted avg       0.78      0.78      0.78      1409
 0.8274044795783926
 
 ## CONFUSION MATRIX 
-[[893 142]
-[161 213]]
+    [[893 142]
+     [161 213]]
 
 Model and Scaler Saved Successfully!
 
